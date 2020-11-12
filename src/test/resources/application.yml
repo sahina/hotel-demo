@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: local
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  datasource:
+    initialization-mode: always
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/hotel_demo
+    username: postgres
+    password: postgres
+  devtools:
+    restart:
+      quiet-period: 1s
+      poll-interval: 2s
+      enabled: true
+
