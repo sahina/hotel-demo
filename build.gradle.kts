@@ -59,8 +59,8 @@ dependencies {
 
     //
     // axon
-    implementation("org.axonframework:axon-spring-boot-starter:4.4")
-    testImplementation("org.axonframework:axon-test:4.4")
+    implementation("org.axonframework:axon-spring-boot-starter:4.4.5")
+    testImplementation("org.axonframework:axon-test:4.4.5")
 
     //
     // others
